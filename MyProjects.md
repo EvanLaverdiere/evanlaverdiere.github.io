@@ -13,7 +13,7 @@ The final project for the Web Programming I course of the Fall 2021 semester was
 
 The website's overall design is admittedly simplistic, and I have made significant improvements to my coding style since I created it. Despite this, I am proud of the technical achievements the project represents.
 
-The repository for this project can be found at 3w5_Laverdiere_E. 
+The repository for this project can be found at [3w5_Laverdiere_E](https://github.com/EvanLaverdiere/3W5_Laverdiere_E). 
 
 It is worth noting that the REM API is inaccessible without a connection to the John Abbott College VPN. Still, the code can easily be modified to provide another API and fulfill a similar purpose.
 
