@@ -15,6 +15,8 @@ The website's overall design is admittedly simplistic, yet I am proud of the tec
 
 The repository for this project can be found at 3w5_Laverdiere_E. 
 
+It is worth noting that the REM API is inaccessible without a connection to the John Abbott College VPN. Still, the code can easily be modified to provide another API and fulfill a similar purpose.
+
 ## Project 2
 
 ## Project 3
