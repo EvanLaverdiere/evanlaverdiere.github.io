@@ -13,7 +13,7 @@ The final project for the Web Programming I course of the Fall 2021 semester was
 
 The website's overall design is admittedly simplistic, yet I am proud of the technical achievements it represents.
 
-The repository for this project can be found at 3w5_Laverdiere_E.
+The repository for this project can be found at 3w5_Laverdiere_E. 
 
 ## Project 2
 
