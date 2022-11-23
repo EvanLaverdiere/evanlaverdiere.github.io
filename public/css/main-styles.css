@@ -1,5 +1,22 @@
 body{
     background-color: aquamarine;
     background-image: url("../../assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
+    color: wheat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+main > a:link{
+    text-decoration: none;
+}
+
+main > a:visited{
+    text-decoration: none;
+}
+
+main > a:hover{
+    text-decoration: none;
+}
+
+main > a:active{
+    text-decoration: none;
 }
