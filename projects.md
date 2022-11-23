@@ -31,4 +31,6 @@ My contributions to the project included the RUD functionality for the Songs mod
 
 This was a challenging project, but we persevered, and I am proud of what we achieved in the time allotted to us. 
 
+The repository for this project can be found at [WP2-MediaMaster](https://github.com/EvanLaverdiere/WP2-MediaMaster).
+
 ## Project 4
