@@ -17,8 +17,18 @@ The repository for this project can be found at [3w5_Laverdiere_E](https://githu
 
 It is worth noting that the REM API is inaccessible without a connection to the John Abbott College VPN. Still, the code can easily be modified to provide another API and fulfill a similar purpose.
 
-## Project 2
+## Project 2: Mega Man Clone
 
-## Project 3
+The final project for the Game Programming course of the Fall 2022 semester is to design a Javascript-based browser game of our choice. For this project, I have decided to create a game in the style of the Mega Man franchise: a sidescrolling action game with several levels, which the player can challenge in any order.
+
+The game is currently a work in progress.
+
+## Project 3: MediaMaster Website
+
+The final project for the Web Programming II course of the Winter 2022 semester was a group project made in collaboration with my classmates [Jeremy Oroc](https://github.com/JeremyOroc) and [Julian Hernandez](https://github.com/Julian-Hernandez1). Our task was to create a CRUD-based transactional MVC web application on a topic of our choice. We chose to create a website called MediaMaster, which would allow a user to log in and then enter, retrieve, update, and delete simple data about their personal music collection. This data, along with the user account information and session tracking data, was stored in a MySQL database running on a docker image.
+
+My contributions to the project included the RUD functionality for the Songs model and controller; the creation of associated views for each of these operations; the writing of unit tests and endpoint tests for the same; and the implementation of tracking cookies, with an associated database model and tests. I also created many of the project's JsDoc files.
+
+This was a challenging project, but we persevered, and I am proud of what we achieved in the time allotted to us. 
 
 ## Project 4
