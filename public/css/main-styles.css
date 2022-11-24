@@ -20,3 +20,20 @@ main > a:hover{
 main > a:active{
     text-decoration: none;
 }
+
+.carousel-caption{
+    background: rgba(red, green, blue, 1);
+}
+
+.carousel-item::before{
+    opacity: 0.5;
+}
+
+.col-sm > .container > img{
+    max-height: 200px;
+    margin: 5px;
+}
+
+#skills-section .row{
+    background: rgba(255, 255, 255, 0.25);
+}
