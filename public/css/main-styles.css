@@ -93,7 +93,7 @@ aside, #projects-section{
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     #main-column{
-        max-height: 95vh;
+        max-height: 85vh;
     }    
 
  }
