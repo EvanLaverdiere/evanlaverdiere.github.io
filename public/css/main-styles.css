@@ -12,6 +12,10 @@ body{
     align-items: center;
 }
 
+h1, h2, h3{
+    margin: 10px;
+}
+
 main > a:link{
     text-decoration: none;
 }
@@ -28,7 +32,7 @@ main > a:active{
     text-decoration: none;
 }
 
-#main-column a{
+#main-column a, #about-section a{
     text-decoration: none;
 }
 
@@ -119,6 +123,9 @@ aside, #projects-section{
         max-height: 85vh;
     }    
 
+    #navbar-home, #navbar-about, #navbar-contact{
+        display: none;
+    }
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
