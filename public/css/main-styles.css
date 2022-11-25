@@ -1,6 +1,7 @@
 body{
     background-color: aquamarine;
     background-image: url("../../assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
+    background-repeat:round;
     color: wheat;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -30,10 +31,32 @@ main > a:active{
 }
 
 .col-sm > .container > img{
-    max-height: 200px;
+    max-height: 175px;
     margin: 5px;
+}
+
+#about-section .col-sm > .container > img{
+    max-height: 500px;
 }
 
 #skills-section .row{
     background: rgba(255, 255, 255, 0.25);
+}
+
+section{
+    border-style: groove;
+    border: 10px inset blue;
+    /* border-radius: 5%; */
+    margin: 10px;
+}
+
+#projects-section section::before{
+}
+
+#projects-section::before{
+    background: rgba(255,255,255,0.5);
+}
+
+.projects{
+    border-bottom: 5px inset whitesmoke;
 }

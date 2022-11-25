@@ -36,23 +36,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li> -->
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -81,14 +70,16 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
 
-    <div class="container">
+    <section class="container" id="about-section">
         <h2 id="about-me">About Me</h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <img src="./assets/images/portrait-medium.jpg">
+                    <div class="container">
+                        <img src="./assets/images/portrait-medium.jpg">
+                    </div>
                 </div>
                 <div class="col-sm">
                     <p>Evan Laverdiere is a third-year student and impending graduate of the <a
@@ -97,185 +88,194 @@
                             Technology</a> program at <a href="https://www.johnabbott.qc.ca/">John Abbott
                             College</a>. He has maintained a standard of academic excellence throughout the program,
                         having been named to the Dean's List in all semesters thus far. Upon graduation, he intends
-                        to
+                        to 
                         pursue
                         a career in application development.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <h2 id="my-projects">My Projects</h2>
+    <section class="container" id="projects-section">
+        <div class="container">
+            <h2 id="my-projects">My Projects</h2>
+    
+            <p>
+                On this page you will find a list of projects that I have created in the course of the Computer Science
+                Technology
+                program. This is just a small selection of my creations, and I am particularly proud of them.
+            </p>
+        </div>
 
-        <p>
-            On this page you will find a list of projects that I have created in the course of the Computer Science
-            Technology
-            program. This is just a small selection of my creations, and I am particularly proud of them.
-        </p>
-    </div>
+        <div class="container projects">
+            <h3>Project 1: REM Trip Planner</h3>
+            <a><img src="assets/images/WP1_final_project.png" class="container"></img></a>
+            <p>
+                The final project for the Web Programming I course of the Fall 2021 semester was to design a hypothetical
+                trip
+                planning website for the (as yet unfinished) <a href="https://rem.info/en">REM train network</a>. The
+                website
+                leverages an API designed by the course's instructors to asynchronously populate several dropdown menus with
+                stations from the network, allowing the user to select start and end destinations for their trip. Once start
+                and
+                end destinations have been selected, and a departure time has been entered, the website will generate a
+                schedule
+                for the user's trip, detailing all stops they will make along their route, the estimated departure or
+                arrival
+                times at each stop, the direction in which they are traveling, the station's address and city, whether the
+                station has connections to any other public transportation networks, and any other notifications worth
+                noting.
+                It also makes use of an external <a href="https://developer.accuweather.com/">AccuWeather</a> API to provide
+                a
+                weather forecast for the user's intended destination.
+            </p>
+            <p>
+                The website's overall design is admittedly simplistic, and I have made significant improvements to my coding
+                style since I created it. Despite this, I am proud of the technical achievements the project represents.
+            </p>
+            <p>
+                The repository for this project can be found at <a
+                    href="https://github.com/EvanLaverdiere/3W5_Laverdiere_E">3W5_Laverdiere_E</a>.
+            </p>
+            <p>
+                It is worth noting that the REM API is inaccessible without a connection to the John Abbott College VPN.
+                Still,
+                the code can easily be modified to provide another API and fulfill a similar purpose.
+            </p>
+        </div>
+        <div class="container projects">
+            <h3>Project 2: Mega Man Clone</h3>
+            <p>
+                The final project for the Game Programming course of the Fall 2022 semester is to design a Javascript-based
+                browser game of our choice. For this project, I have decided to create a game in the style of the Mega Man
+                franchise: a sidescrolling action game with several levels, which the player can challenge in any order.
+    
+            </p>
+            <p>The game is currently a work in progress.</p>
+        </div>
+        <div class="container">
+            <h3>
+                Project 3: MediaMaster Website
+            </h3>
+            <p>
+                The final project for the Web Programming II course of the Winter 2022 semester was a group project made in
+                collaboration with my classmates <a href="https://github.com/JeremyOroc">Jeremy Oroc</a> and <a
+                    href="https://github.com/Julian-Hernandez1">Julian Hernandez</a>. Our task was to create a CRUD-based
+                transactional MVC web application on a topic of our choice. We chose to create a website called MediaMaster,
+                which would allow a user to log in and then enter, retrieve, update, and delete simple data about their
+                personal music collection. This data, along with the user account information and session tracking data, was
+                stored in a MySQL database running on a docker image.
+            </p>
+            <p>
+                My contributions to the project included the RUD functionality for the Songs model and controller; the
+                creation of associated views for each of these operations; the writing of unit tests and endpoint tests for
+                the same; and the implementation of tracking cookies, with an associated database model and tests. I also
+                created many of the project's JsDoc files.
+            </p>
+            <p>
+                This was a challenging project, but we persevered, and I am proud of what we achieved in the time allotted
+                to us.
+            </p>
+            <p>
+                The repository for this project can be found at <a
+                    href="https://github.com/EvanLaverdiere/WP2-MediaMaster">WP2-MediaMaster</a>.
+            </p>
+        </div>
+    
+    </section>
 
-    <div class="container">
-        <h3>Project 1: REM Trip Planner</h3>
-        <a><img src="assets/images/WP1_final_project.png" class="container"></img></a>
-        <p>
-            The final project for the Web Programming I course of the Fall 2021 semester was to design a hypothetical
-            trip
-            planning website for the (as yet unfinished) <a href="https://rem.info/en">REM train network</a>. The
-            website
-            leverages an API designed by the course's instructors to asynchronously populate several dropdown menus with
-            stations from the network, allowing the user to select start and end destinations for their trip. Once start
-            and
-            end destinations have been selected, and a departure time has been entered, the website will generate a
-            schedule
-            for the user's trip, detailing all stops they will make along their route, the estimated departure or
-            arrival
-            times at each stop, the direction in which they are traveling, the station's address and city, whether the
-            station has connections to any other public transportation networks, and any other notifications worth
-            noting.
-            It also makes use of an external <a href="https://developer.accuweather.com/">AccuWeather</a> API to provide
-            a
-            weather forecast for the user's intended destination.
-        </p>
-        <p>
-            The website's overall design is admittedly simplistic, and I have made significant improvements to my coding
-            style since I created it. Despite this, I am proud of the technical achievements the project represents.
-        </p>
-        <p>
-            The repository for this project can be found at <a
-                href="https://github.com/EvanLaverdiere/3W5_Laverdiere_E">3W5_Laverdiere_E</a>.
-        </p>
-        <p>
-            It is worth noting that the REM API is inaccessible without a connection to the John Abbott College VPN.
-            Still,
-            the code can easily be modified to provide another API and fulfill a similar purpose.
-        </p>
-    </div>
-    <div class="container">
-        <h3>Project 2: Mega Man Clone</h3>
-        <p>
-            The final project for the Game Programming course of the Fall 2022 semester is to design a Javascript-based
-            browser game of our choice. For this project, I have decided to create a game in the style of the Mega Man
-            franchise: a sidescrolling action game with several levels, which the player can challenge in any order.
-
-        </p>
-        <p>The game is currently a work in progress.</p>
-    </div>
-    <div class="container">
-        <h3>
-            Project 3: MediaMaster Website
-        </h3>
-        <p>
-            The final project for the Web Programming II course of the Winter 2022 semester was a group project made in
-            collaboration with my classmates <a href="https://github.com/JeremyOroc">Jeremy Oroc</a> and <a
-                href="https://github.com/Julian-Hernandez1">Julian Hernandez</a>. Our task was to create a CRUD-based
-            transactional MVC web application on a topic of our choice. We chose to create a website called MediaMaster,
-            which would allow a user to log in and then enter, retrieve, update, and delete simple data about their
-            personal music collection. This data, along with the user account information and session tracking data, was
-            stored in a MySQL database running on a docker image.
-        </p>
-        <p>
-            My contributions to the project included the RUD functionality for the Songs model and controller; the
-            creation of associated views for each of these operations; the writing of unit tests and endpoint tests for
-            the same; and the implementation of tracking cookies, with an associated database model and tests. I also
-            created many of the project's JsDoc files.
-        </p>
-        <p>
-            This was a challenging project, but we persevered, and I am proud of what we achieved in the time allotted
-            to us.
-        </p>
-        <p>
-            The repository for this project can be found at <a
-                href="https://github.com/EvanLaverdiere/WP2-MediaMaster">WP2-MediaMaster</a>.
-        </p>
-    </div>
 
     <section class="container" id="skills-section">
         <h2 id="skills">My Skills</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/c-sharp-c-seeklogo.com.svg" alt="C# logo. Taken from seeklogo: https://seeklogo.com/vector-logo/363285/c-sharp-c"/>
+                        <img src="./assets/images/c-sharp-c-seeklogo.com.svg" alt="C# logo. Taken from seeklogo: https://seeklogo.com/vector-logo/363285/c-sharp-c" class="container"/>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/java-seeklogo.com.svg" alt="Java logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273556/java"/>
+                        <img src="./assets/images/java-seeklogo.com.svg" alt="Java logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273556/java" class="container"/>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/nodejs-seeklogo.com.svg" alt="Node.js logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273750/node-js"/>
+                        <img src="./assets/images/nodejs-seeklogo.com.svg" alt="Node.js logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273750/node-js" class="container"/>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/html5-with-wordmark-color.svg" alt="HTML 5 logo. Taken from seeklogo: https://seeklogo.com/vector-logo/224332/html5-with-wordmark-color"/>
+                        <img src="./assets/images/html5-with-wordmark-color.svg" alt="HTML 5 logo. Taken from seeklogo: https://seeklogo.com/vector-logo/224332/html5-with-wordmark-color" class="container"/>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/javascript-seeklogo.com.svg" alt="JavaScript logo. Taken from seeklogo: https://seeklogo.com/vector-logo/330541/javascript">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png" alt="CSS 3 logo. Image originally uploaded to Wikimedia commons by Rudolff: Rudloff, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons" class="container">
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/net-seeklogo.com.svg" alt=".NET logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273162/net">
+                        <img src="./assets/images/javascript-seeklogo.com.svg" alt="JavaScript logo. Taken from seeklogo: https://seeklogo.com/vector-logo/330541/javascript" class="container">
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="container">
-                        <img src="./assets/images/android-seeklogo.com.svg" alt="Android logo. Taken from seeklogo: https://seeklogo.com/vector-logo/272810/android">
+                        <img src="./assets/images/net-seeklogo.com.svg" alt=".NET logo. Taken from seeklogo: https://seeklogo.com/vector-logo/273162/net" class="container">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="container">
+                        <img src="./assets/images/android-seeklogo.com.svg" alt="Android logo. Taken from seeklogo: https://seeklogo.com/vector-logo/272810/android" class="container">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm">
                     <div class="container">
-                        <img src="./assets/images/microsoft-visual-studio-seeklogo.com.svg" alt="Microsoft Visual Studio logo. Taken from seeklogo: https://seeklogo.com/vector-logo/430845/microsoft-visual-studio">
+                        <img src="./assets/images/microsoft-visual-studio-seeklogo.com.svg" alt="Microsoft Visual Studio logo. Taken from seeklogo: https://seeklogo.com/vector-logo/430845/microsoft-visual-studio" class="container">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="container">
-                        <img src="./assets/images/visual-studio-code-seeklogo.com.svg" alt="Microsoft Visual Studio Code logo. Taken from seeklogo: https://seeklogo.com/vector-logo/384323/visual-studio-code">
+                        <img src="./assets/images/visual-studio-code-seeklogo.com.svg" alt="Microsoft Visual Studio Code logo. Taken from seeklogo: https://seeklogo.com/vector-logo/384323/visual-studio-code" class="container">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="container">
-                        <img src="./assets/images/intellij-idea-seeklogo.com.svg" alt="IntelliJ IDEA logo. Taken from seeklogo: https://seeklogo.com/vector-logo/284399/intellij-idea">
+                        <img src="./assets/images/intellij-idea-seeklogo.com.svg" alt="IntelliJ IDEA logo. Taken from seeklogo: https://seeklogo.com/vector-logo/284399/intellij-idea" class="container">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="container">
-                        <img src="./assets/images/pycharm-seeklogo.com.svg" alt="PyCharm logo. Taken from seeklogo: https://seeklogo.com/vector-logo/284396/pycharm">
+                        <img src="./assets/images/pycharm-seeklogo.com.svg" alt="PyCharm logo. Taken from seeklogo: https://seeklogo.com/vector-logo/284396/pycharm" class="container">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="container">
-                        <img src="./assets/images/android-studio-seeklogo.com.svg" alt="Android Studio logo. Taken from seeklogo: https://seeklogo.com/vector-logo/337699/android-studio">
+                        <img src="./assets/images/android-studio-seeklogo.com.svg" alt="Android Studio logo. Taken from seeklogo: https://seeklogo.com/vector-logo/337699/android-studio" class="container">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container">
+    <section class="container">
         <h2 id="contact">Contact Information</h2>
         <div class="row">
             <div class="col-sm">
                 <div class="container">
-                    <a href="https://www.linkedin.com/in/evan-laverdiere/"><img src="./assets/images/linkedin-seeklogo.com.svg"></a>
+                    <a href="https://www.linkedin.com/in/evan-laverdiere/"><img src="./assets/images/linkedin-seeklogo.com.svg" class="container"></a>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="container">
-                    <a href="#"><img src="./assets/images/github-seeklogo.com.svg"></a>
+                    <a href="#"><img src="./assets/images/github-seeklogo.com.svg" class="container"></a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 </body>
