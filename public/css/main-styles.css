@@ -64,6 +64,15 @@ aside, #projects-section{
     background: rgba(255,255,255,0.5);
 }
 
+.contacts-row{
+    background: white;
+    padding: 5px;
+}
+
+.row img{
+    margin: 10px;
+}
+
 .projects{
     border-top: 5px inset whitesmoke;
 }
@@ -74,8 +83,23 @@ aside, #projects-section{
 
 }
 
-::-webkit-scrollbar{
-    display: none;
+.overflow-auto::-webkit-scrollbar{
+    /* display: none; */
+    width: 10px;
+}
+
+.overflow-auto::-webkit-scrollbar-track{
+    background: blue;
+    border-radius: 10px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover{
+    background: darkred;
 }
 
 /* BOOTSTRAP BREAKPOINTS */
